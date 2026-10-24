@@ -1,0 +1,38 @@
+
+var hear = 50;
+var speed = 50;
+var body = 50;
+var ears = 25;
+
+
+draw = function(){
+screen.drawRect(150,150,body,body);
+screen.drawEllipse(200,150,body,body);
+screen.drawTriangle(175,125,ears,ears);
+screen.drawTriangle(225,125,ears,ears);
+screen.drawEllipse(175,150,ears,ears);
+screen.drawEllipse(225,150,ears,ears);
+screen.drawRect(155,155,body-5,body-5);
+screen.drawTriangle
+};
+
+if (KeyPressed = w) {
+x=x-1;    
+};
+
+if (KeyPressed = a) {
+y=y-1;
+};
+
+if (KeyPressed = s) {
+x=x+1;  
+};
+
+if (KeyPressed = d) {
+y=y+1    
+};
+
+if (KeyPressed = spacebar) {
+    
+};
+
