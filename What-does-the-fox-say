@@ -1,38 +1,589 @@
 
-var hear = 50;
+var hearing_range = 50;
 var speed = 50;
 var body = 50;
 var ears = 25;
-
-
+var grid01 = 50;
+var start = 50;
+var grid02 = 25;
+var end = 100;
+var g3 = 5;
+//fox
 draw = function(){
-screen.drawRect(150,150,body,body);
-screen.drawEllipse(200,150,body,body);
-screen.drawTriangle(175,125,ears,ears);
-screen.drawTriangle(225,125,ears,ears);
-screen.drawEllipse(175,150,ears,ears);
-screen.drawEllipse(225,150,ears,ears);
-screen.drawRect(155,155,body-5,body-5);
-screen.drawTriangle
+    fill(50,10,10);
+ screen.drawEllipse(start.x,start.y,40,40);
+    fill(100,100,100);
+ screen.drawEllipse(start.x-5,start.y-5,5,5);
+ screen.drawEllipse(start.x+10,start.y-5,5,5);
+screen.drawEllipse(start.x,start.y+20,7,5);
 };
 
 if (KeyPressed = w) {
-x=x-1;    
+x=x-10;    
 };
 
 if (KeyPressed = a) {
-y=y-1;
+y=y-10;
 };
 
 if (KeyPressed = s) {
-x=x+1;  
+x=x+10;  
 };
 
 if (KeyPressed = d) {
-y=y+1    
+y=y+10;    
 };
 
-if (KeyPressed = spacebar) {
-    
-};
+//cow
+draw = function(){
+screen.drawEllipse(end.x,end.y,40,40);
+screen.drawEllipse(end.x-5,end.y-5,5,5);
+screen.drawEllipse(end.x+10,end.y-5,5,5);
+screen.drawEllipse(end.x,end.y+20,40,10);
 
+};
+//grid
+draw = function () {
+    //row 1
+ screen.drawRect(1,1,grid01,grid01);
+ screen.drawRect(51,1,grid01,grid01);
+ screen.drawRect(101,1,grid01,grid01);
+ screen.drawRect(151,1,grid01,grid01);
+ screen.drawRect(201,1,grid01,grid01);
+ screen.drawRect(251,1,grid01,grid01);
+ screen.drawRect(301,1,grid01,grid01);
+ screen.drawRect(351,1,grid01,grid01);
+ //row 2
+ screen.drawRect(1,51,grid01,grid01);
+ screen.drawRect(51,51,grid01,grid01);
+ screen.drawRect(101,51,grid01,grid01);
+ screen.drawRect(151,51,grid01,grid01);
+ screen.drawRect(201,51,grid01,grid01);
+ screen.drawRect(251,51,grid01,grid01);
+ screen.drawRect(301,51,grid01,grid01);
+ screen.drawRect(351,51,grid01,grid01);
+ //row 3
+ screen.drawRect(1,101,grid01,grid01);
+ screen.drawRect(51,101,grid01,grid01);
+ screen.drawRect(101,101,grid01,grid01);
+ screen.drawRect(151,101,grid01,grid01);
+ screen.drawRect(201,101,grid01,grid01);
+ screen.drawRect(251,101,grid01,grid01);
+ screen.drawRect(301,101,grid01,grid01);
+ screen.drawRect(351,101,grid01,grid01);
+ //row 4
+ screen.drawRect(1,151,grid01,grid01);
+ screen.drawRect(51,151,grid01,grid01);
+ screen.drawRect(101,151,grid01,grid01);
+ screen.drawRect(151,151,grid01,grid01);
+ screen.drawRect(201,151,grid01,grid01);
+ screen.drawRect(251,151,grid01,grid01);
+ screen.drawRect(301,151,grid01,grid01);
+ screen.drawRect(351,101,grid01,grid01);
+ //row 5
+ screen.drawRect(1,201,grid01,grid01);
+ screen.drawRect(51,201,grid01,grid01);
+ screen.drawRect(101,201,grid01,grid01);
+ screen.drawRect(151,201,grid01,grid01);
+ screen.drawRect(201,201,grid01,grid01);
+ screen.drawRect(251,201,grid01,grid01);
+ screen.drawRect(301,201,grid01,grid01);
+ screen.drawRect(351,201,grid01,grid01);
+ //row 6
+ screen.drawRect(1,251,grid01,grid01);
+ screen.drawRect(51,251,grid01,grid01);
+ screen.drawRect(101,251,grid01,grid01);
+ screen.drawRect(151,251,grid01,grid01);
+ screen.drawRect(201,251,grid01,grid01);
+ screen.drawRect(251,251,grid01,grid01);
+ screen.drawRect(301,251,grid01,grid01);
+ screen.drawRect(351,251,grid01,grid01);
+ //row 7
+ screen.drawRect(1,301,grid01,grid01);
+ screen.drawRect(51,301,grid01,grid01);
+ screen.drawRect(101,301,grid01,grid01);
+ screen.drawRect(151,301,grid01,grid01);
+ screen.drawRect(201,301,grid01,grid01);
+ screen.drawRect(251,301,grid01,grid01);
+ screen.drawRect(301,301,grid01,grid01);
+ screen.drawRect(351,301,grid01,grid01);
+ //row 8
+ screen.drawRect(1,351,grid01,grid01);
+ screen.drawRect(51,351,grid01,grid01);
+ screen.drawRect(101,351,grid01,grid01);
+ screen.drawRect(151,351,grid01,grid01);
+ screen.drawRect(201,351,grid01,grid01);
+ screen.drawRect(251,351,grid01,grid01);
+ screen.drawRect(301,351,grid01,grid01);
+ screen.drawRect(351,351,grid01,grid01);  
+
+
+
+
+
+
+
+}
+
+//grid 2
+draw = function () {
+//row1
+screen.drawRect(1,1,grid02,grid02);
+screen.drawRect(26,1,grid02,grid02);
+screen.drawRect(51,1,grid02,grid02);
+screen.drawRect(76,1,grid02,grid02);
+screen.drawRect(101,1,grid02,grid02);
+screen.drawRect(126,1,grid02,grid02);
+screen.drawRect(151,1,grid02,grid02);
+screen.drawRect(176,1,grid02,grid02);
+screen.drawRect(201,1,grid02,grid02);
+screen.drawRect(226,1,grid02,grid02);
+screen.drawRect(251,1,grid02,grid02);
+screen.drawRect(276,1,grid02,grid02);
+screen.drawRect(301,1,grid02,grid02);
+screen.drawRect(326,1,grid02,grid02);
+screen.drawRect(351,1,grid02,grid02);
+//row2
+screen.drawRect(1,26,grid02,grid02);
+screen.drawRect(26,26,grid02,grid02);
+screen.drawRect(51,26,grid02,grid02);
+screen.drawRect(76,26,grid02,grid02);
+screen.drawRect(101,26,grid02,grid02);
+screen.drawRect(126,26,grid02,grid02);
+screen.drawRect(151,26,grid02,grid02);
+screen.drawRect(176,26,grid02,grid02);
+screen.drawRect(201,26,grid02,grid02);
+screen.drawRect(226,26,grid02,grid02);
+screen.drawRect(251,26,grid02,grid02);
+screen.drawRect(276,26,grid02,grid02);
+screen.drawRect(301,26,grid02,grid02);
+screen.drawRect(326,26,grid02,grid02);
+screen.drawRect(351,26,grid02,grid02);
+//row3
+screen.drawRect(1,51,grid02,grid02);
+screen.drawRect(26,51,grid02,grid02);
+screen.drawRect(51,51,grid02,grid02);
+screen.drawRect(76,51,grid02,grid02);
+screen.drawRect(101,51,grid02,grid02);
+screen.drawRect(126,51,grid02,grid02);
+screen.drawRect(151,51,grid02,grid02);
+screen.drawRect(176,51,grid02,grid02);
+screen.drawRect(201,51,grid02,grid02);
+screen.drawRect(226,51,grid02,grid02);
+screen.drawRect(251,51,grid02,grid02);
+screen.drawRect(276,51,grid02,grid02);
+screen.drawRect(301,51,grid02,grid02);
+screen.drawRect(326,51,grid02,grid02);
+screen.drawRect(351,51,grid02,grid02);
+//row4
+screen.drawRect(1,76,grid02,grid02);
+screen.drawRect(26,76,grid02,grid02);
+screen.drawRect(51,76,grid02,grid02);
+screen.drawRect(76,76,grid02,grid02);
+screen.drawRect(101,76,grid02,grid02);
+screen.drawRect(126,76,grid02,grid02);
+screen.drawRect(151,76,grid02,grid02);
+screen.drawRect(176,76,grid02,grid02);
+screen.drawRect(201,76,grid02,grid02);
+screen.drawRect(226,76,grid02,grid02);
+screen.drawRect(251,76,grid02,grid02);
+screen.drawRect(276,76,grid02,grid02);
+screen.drawRect(301,76,grid02,grid02);
+screen.drawRect(326,76,grid02,grid02);
+screen.drawRect(351,76,grid02,grid02);
+//row5
+screen.drawRect(1,101,grid02,grid02);
+screen.drawRect(26,101,grid02,grid02);
+screen.drawRect(51,101,grid02,grid02);
+screen.drawRect(76,101,grid02,grid02);
+screen.drawRect(101,101,grid02,grid02);
+screen.drawRect(126,101,grid02,grid02);
+screen.drawRect(151,101,grid02,grid02);
+screen.drawRect(176,101,grid02,grid02);
+screen.drawRect(201,101,grid02,grid02);
+screen.drawRect(226,101,grid02,grid02);
+screen.drawRect(251,101,grid02,grid02);
+screen.drawRect(276,101,grid02,grid02);
+screen.drawRect(301,101,grid02,grid02);
+screen.drawRect(326,101,grid02,grid02);
+screen.drawRect(351,101,grid02,grid02);
+//row6
+screen.drawRect(1,126,grid02,grid02);
+screen.drawRect(26,126,grid02,grid02);
+screen.drawRect(51,126,grid02,grid02);
+screen.drawRect(76,126,grid02,grid02);
+screen.drawRect(101,126,grid02,grid02);
+screen.drawRect(126,126,grid02,grid02);
+screen.drawRect(151,126,grid02,grid02);
+screen.drawRect(176,126,grid02,grid02);
+screen.drawRect(201,126,grid02,grid02);
+screen.drawRect(226,126,grid02,grid02);
+screen.drawRect(251,126,grid02,grid02);
+screen.drawRect(276,126,grid02,grid02);
+screen.drawRect(301,126,grid02,grid02);
+screen.drawRect(326,126,grid02,grid02);
+screen.drawRect(351,126,grid02,grid02);
+//row7
+screen.drawRect(1,151,grid02,grid02);
+screen.drawRect(26,151,grid02,grid02);
+screen.drawRect(51,151,grid02,grid02);
+screen.drawRect(76,151,grid02,grid02);
+screen.drawRect(101,151,grid02,grid02);
+screen.drawRect(126,151,grid02,grid02);
+screen.drawRect(151,151,grid02,grid02);
+screen.drawRect(176,151,grid02,grid02);
+screen.drawRect(201,151,grid02,grid02);
+screen.drawRect(226,151,grid02,grid02);
+screen.drawRect(251,151,grid02,grid02);
+screen.drawRect(276,151,grid02,grid02);
+screen.drawRect(301,151,grid02,grid02);
+screen.drawRect(326,151,grid02,grid02);
+screen.drawRect(351,126,grid02,grid02);
+//row8
+screen.drawRect(1,176,grid02,grid02);
+screen.drawRect(26,176,grid02,grid02);
+screen.drawRect(51,176,grid02,grid02);
+screen.drawRect(76,176,grid02,grid02);
+screen.drawRect(101,176,grid02,grid02);
+screen.drawRect(126,176,grid02,grid02);
+screen.drawRect(151,176,grid02,grid02);
+screen.drawRect(176,176,grid02,grid02);
+screen.drawRect(201,176,grid02,grid02);
+screen.drawRect(226,176,grid02,grid02);
+screen.drawRect(251,176,grid02,grid02);
+screen.drawRect(276,176,grid02,grid02);
+screen.drawRect(301,176,grid02,grid02);
+screen.drawRect(326,176,grid02,grid02);
+screen.drawRect(351,176,grid02,grid02);
+//row9
+screen.drawRect(1,201,grid02,grid02);
+screen.drawRect(26,201,grid02,grid02);
+screen.drawRect(51,201,grid02,grid02);
+screen.drawRect(76,201,grid02,grid02);
+screen.drawRect(101,201,grid02,grid02);
+screen.drawRect(126,201,grid02,grid02);
+screen.drawRect(151,201,grid02,grid02);
+screen.drawRect(176,201,grid02,grid02);
+screen.drawRect(201,201,grid02,grid02);
+screen.drawRect(226,201,grid02,grid02);
+screen.drawRect(251,201,grid02,grid02);
+screen.drawRect(276,201,grid02,grid02);
+screen.drawRect(301,201,grid02,grid02);
+screen.drawRect(326,201,grid02,grid02);
+screen.drawRect(351,201,grid02,grid02);
+//row10
+screen.drawRect(1,226,grid02,grid02);
+screen.drawRect(26,226,grid02,grid02);
+screen.drawRect(51,226,grid02,grid02);
+screen.drawRect(76,226,grid02,grid02);
+screen.drawRect(101,226,grid02,grid02);
+screen.drawRect(126,226,grid02,grid02);
+screen.drawRect(151,226,grid02,grid02);
+screen.drawRect(176,226,grid02,grid02);
+screen.drawRect(201,226,grid02,grid02);
+screen.drawRect(226,226,grid02,grid02);
+screen.drawRect(251,226,grid02,grid02);
+screen.drawRect(276,226,grid02,grid02);
+screen.drawRect(301,226,grid02,grid02);
+screen.drawRect(326,226,grid02,grid02);
+screen.drawRect(351,226,grid02,grid02);
+//row11
+screen.drawRect(1,276,grid02,grid02);
+screen.drawRect(26,276,grid02,grid02);
+screen.drawRect(51,276,grid02,grid02);
+screen.drawRect(76,276,grid02,grid02);
+screen.drawRect(101,276,grid02,grid02);
+screen.drawRect(126,276,grid02,grid02);
+screen.drawRect(151,276,grid02,grid02);
+screen.drawRect(176,276,grid02,grid02);
+screen.drawRect(201,276,grid02,grid02);
+screen.drawRect(226,276,grid02,grid02);
+screen.drawRect(251,276,grid02,grid02);
+screen.drawRect(276,276,grid02,grid02);
+screen.drawRect(301,276,grid02,grid02);
+screen.drawRect(326,276,grid02,grid02);
+screen.drawRect(351,276,grid02,grid02);
+//row12
+screen.drawRect(1,301,grid02,grid02);
+screen.drawRect(26,301,grid02,grid02);
+screen.drawRect(51,301,grid02,grid02);
+screen.drawRect(76,301,grid02,grid02);
+screen.drawRect(101,301,grid02,grid02);
+screen.drawRect(126,301,grid02,grid02);
+screen.drawRect(151,301,grid02,grid02);
+screen.drawRect(176,301,grid02,grid02);
+screen.drawRect(201,301,grid02,grid02);
+screen.drawRect(226,301,grid02,grid02);
+screen.drawRect(251,301,grid02,grid02);
+screen.drawRect(276,301,grid02,grid02);
+screen.drawRect(301,301,grid02,grid02);
+screen.drawRect(326,301,grid02,grid02);
+screen.drawRect(351,301,grid02,grid02);
+//row13
+screen.drawRect(1,326,grid02,grid02);
+screen.drawRect(26,326,grid02,grid02);
+screen.drawRect(51,326,grid02,grid02);
+screen.drawRect(76,326,grid02,grid02);
+screen.drawRect(101,326,grid02,grid02);
+screen.drawRect(126,326,grid02,grid02);
+screen.drawRect(151,326,grid02,grid02);
+screen.drawRect(176,326,grid02,grid02);
+screen.drawRect(201,326,grid02,grid02);
+screen.drawRect(226,326,grid02,grid02);
+screen.drawRect(251,326,grid02,grid02);
+screen.drawRect(276,326,grid02,grid02);
+screen.drawRect(301,326,grid02,grid02);
+screen.drawRect(326,326,grid02,grid02);
+screen.drawRect(351,326,grid02,grid02);
+//row14
+screen.drawRect(1,351,grid02,grid02);
+screen.drawRect(26,351,grid02,grid02);
+screen.drawRect(51,351,grid02,grid02);
+screen.drawRect(76,351,grid02,grid02);
+screen.drawRect(101,351,grid02,grid02);
+screen.drawRect(126,351,grid02,grid02);
+screen.drawRect(151,351,grid02,grid02);
+screen.drawRect(176,351,grid02,grid02);
+screen.drawRect(201,351,grid02,grid02);
+screen.drawRect(226,351,grid02,grid02);
+screen.drawRect(251,351,grid02,grid02);
+screen.drawRect(276,351,grid02,grid02);
+screen.drawRect(301,351,grid02,grid02);
+screen.drawRect(326,351,grid02,grid02);
+screen.drawRect(351,351,grid02,grid02);
+
+//grid3
+//row1
+screen.drawRect(1,1,g3,g3);
+screen.drawRect(6,1,g3,g3);
+screen.drawRect(11,1,g3,g3);
+screen.drawRect(16,1,g3,g3);
+screen.drawRect(21,1,g3,g3);
+screen.drawRect(26,1,g3,g3);
+screen.drawRect(31,1,g3,g3);
+screen.drawRect(36,1,g3,g3);
+screen.drawRect(41,1,g3,g3);
+screen.drawRect(46,1,g3,g3);
+screen.drawRect(51,1,g3,g3);
+screen.drawRect(56,1,g3,g3);
+screen.drawRect(61,1,g3,g3);
+screen.drawRect(66,1,g3,g3);
+screen.drawRect(71,1,g3,g3);
+screen.drawRect(76,1,g3,g3);
+screen.drawRect(81,1,g3,g3);
+screen.drawRect(86,1,g3,g3);
+screen.drawRect(91,1,g3,g3);
+screen.drawRect(96,1,g3,g3);
+screen.drawRect(101,1,g3,g3);
+screen.drawRect(106,1,g3,g3);
+screen.drawRect(111,1,g3,g3);
+screen.drawRect(116,1,g3,g3);
+screen.drawRect(121,1,g3,g3);
+screen.drawRect(126,1,g3,g3);
+screen.drawRect(131,1,g3,g3);
+screen.drawRect(136,1,g3,g3);
+screen.drawRect(141,1,g3,g3);
+screen.drawRect(146,1,g3,g3);
+screen.drawRect(151,1,g3,g3);
+screen.drawRect(156,1,g3,g3);
+screen.drawRect(161,1,g3,g3);
+screen.drawRect(166,1,g3,g3);
+screen.drawRect(171,1,g3,g3);
+screen.drawRect(176,1,g3,g3);
+screen.drawRect(181,1,g3,g3);
+screen.drawRect(186,1,g3,g3);
+screen.drawRect(191,1,g3,g3);
+screen.drawRect(196,1,g3,g3);
+screen.drawRect(201,1,g3,g3);
+screen.drawRect(206,1,g3,g3);
+screen.drawRect(211,1,g3,g3);
+screen.drawRect(216,1,g3,g3);
+screen.drawRect(221,1,g3,g3);
+screen.drawRect(226,1,g3,g3);
+screen.drawRect(231,1,g3,g3);
+screen.drawRect(236,1,g3,g3);
+screen.drawRect(241,1,g3,g3);
+screen.drawRect(246,1,g3,g3);
+screen.drawRect(251,1,g3,g3);
+screen.drawRect(256,1,g3,g3);
+screen.drawRect(261,1,g3,g3);
+screen.drawRect(266,1,g3,g3);
+screen.drawRect(271,1,g3,g3);
+screen.drawRect(276,1,g3,g3);
+screen.drawRect(281,1,g3,g3);
+screen.drawRect(286,1,g3,g3);
+screen.drawRect(291,1,g3,g3);
+screen.drawRect(296,1,g3,g3);
+screen.drawRect(301,1,g3,g3);
+screen.drawRect(306,1,g3,g3);
+screen.drawRect(311,1,g3,g3);
+screen.drawRect(316,1,g3,g3);
+screen.drawRect(321,1,g3,g3);
+screen.drawRect(326,1,g3,g3);
+screen.drawRect(331,1,g3,g3);
+screen.drawRect(336,1,g3,g3);
+screen.drawRect(341,1,g3,g3);
+
+//row2
+screen.drawRect(1,6,g3,g3);
+screen.drawRect(6,6,g3,g3);
+screen.drawRect(11,6,g3,g3);
+screen.drawRect(16,6,g3,g3);
+screen.drawRect(21,6,g3,g3);
+screen.drawRect(26,6,g3,g3);
+screen.drawRect(31,6,g3,g3);
+screen.drawRect(36,6,g3,g3);
+screen.drawRect(41,6,g3,g3);
+screen.drawRect(46,6,g3,g3);
+screen.drawRect(51,6,g3,g3);
+screen.drawRect(56,6,g3,g3);
+screen.drawRect(61,6,g3,g3);
+screen.drawRect(66,6,g3,g3);
+screen.drawRect(71,6,g3,g3);
+screen.drawRect(76,6,g3,g3);
+screen.drawRect(81,6,g3,g3);
+screen.drawRect(86,6,g3,g3);
+screen.drawRect(91,6,g3,g3);
+screen.drawRect(96,6,g3,g3);
+screen.drawRect(101,6,g3,g3);
+screen.drawRect(106,6,g3,g3);
+screen.drawRect(111,6,g3,g3);
+screen.drawRect(116,6,g3,g3);
+screen.drawRect(121,6,g3,g3);
+screen.drawRect(126,6,g3,g3);
+screen.drawRect(131,6,g3,g3);
+screen.drawRect(136,6,g3,g3);
+screen.drawRect(141,6,g3,g3);
+screen.drawRect(146,6,g3,g3);
+screen.drawRect(151,6,g3,g3);
+screen.drawRect(156,6,g3,g3);
+screen.drawRect(161,6,g3,g3);
+screen.drawRect(166,6,g3,g3);
+screen.drawRect(171,6,g3,g3);
+screen.drawRect(176,6,g3,g3);
+screen.drawRect(181,6,g3,g3);
+screen.drawRect(186,6,g3,g3);
+screen.drawRect(191,6,g3,g3);
+screen.drawRect(196,6,g3,g3);
+screen.drawRect(101,6,g3,g3);
+screen.drawRect(106,6,g3,g3);
+screen.drawRect(111,6,g3,g3);
+screen.drawRect(116,6,g3,g3);
+screen.drawRect(121,6,g3,g3);
+screen.drawRect(126,6,g3,g3);
+screen.drawRect(131,6,g3,g3);
+screen.drawRect(136,6,g3,g3);
+screen.drawRect(141,6,g3,g3);
+screen.drawRect(146,6,g3,g3);
+screen.drawRect(151,6,g3,g3);
+screen.drawRect(156,6,g3,g3);
+screen.drawRect(161,6,g3,g3);
+screen.drawRect(166,6,g3,g3);
+screen.drawRect(171,6,g3,g3);
+screen.drawRect(176,6,g3,g3);
+screen.drawRect(181,6,g3,g3);
+screen.drawRect(186,6,g3,g3);
+screen.drawRect(191,6,g3,g3);
+screen.drawRect(196,6,g3,g3);
+screen.drawRect(201,6,g3,g3);
+screen.drawRect(206,6,g3,g3);
+screen.drawRect(211,6,g3,g3);
+screen.drawRect(216,6,g3,g3);
+screen.drawRect(221,6,g3,g3);
+screen.drawRect(226,6,g3,g3);
+screen.drawRect(231,6,g3,g3);
+screen.drawRect(236,6,g3,g3);
+screen.drawRect(241,6,g3,g3);
+screen.drawRect(246,6,g3,g3);
+screen.drawRect(251,6,g3,g3);
+screen.drawRect(256,6,g3,g3);
+screen.drawRect(261,6,g3,g3);
+screen.drawRect(266,6,g3,g3);
+screen.drawRect(271,6,g3,g3);
+screen.drawRect(276,6,g3,g3);
+screen.drawRect(281,6,g3,g3);
+screen.drawRect(286,6,g3,g3);
+screen.drawRect(291,6,g3,g3);
+screen.drawRect(296,6,g3,g3);
+screen.drawRect(301,6,g3,g3);
+screen.drawRect(306,6,g3,g3);
+screen.drawRect(311,6,g3,g3);
+screen.drawRect(316,6,g3,g3);
+screen.drawRect(321,6,g3,g3);
+screen.drawRect(326,6,g3,g3);
+screen.drawRect(331,6,g3,g3);
+screen.drawRect(336,6,g3,g3);
+screen.drawRect(341,6,g3,g3);
+screen.drawRect(346,6,g3,g3);
+//row3
+screen.drawRect(1,11,g3,g3);
+screen.drawRect(6,11,g3,g3);
+screen.drawRect(11,11,g3,g3);
+screen.drawRect(16,11,g3,g3);
+screen.drawRect(21,11,g3,g3);
+screen.drawRect(26,11,g3,g3);
+screen.drawRect(31,11,g3,g3);
+screen.drawRect(36,11,g3,g3);
+screen.drawRect(41,11,g3,g3);
+screen.drawRect(46,11,g3,g3);
+screen.drawRect(51,11,g3,g3);
+screen.drawRect(56,11,g3,g3);
+screen.drawRect(61,11,g3,g3);
+screen.drawRect(66,11,g3,g3);
+screen.drawRect(71,11,g3,g3);
+screen.drawRect(76,11,g3,g3);
+screen.drawRect(81,11,g3,g3);
+screen.drawRect(86,11,g3,g3);
+screen.drawRect(91,11,g3,g3);
+screen.drawRect(96,11,g3,g3);
+screen.drawRect(101,11,g3,g3);
+screen.drawRect(106,11,g3,g3);
+screen.drawRect(111,11,g3,g3);
+screen.drawRect(116,11,g3,g3);
+screen.drawRect(121,11,g3,g3);
+screen.drawRect(126,11,g3,g3);
+screen.drawRect(131,11,g3,g3);
+screen.drawRect(136,11,g3,g3);
+screen.drawRect(141,11,g3,g3);
+screen.drawRect(146,11,g3,g3);
+screen.drawRect(151,11,g3,g3);
+screen.drawRect(156,11,g3,g3);
+screen.drawRect(161,11,g3,g3);
+screen.drawRect(166,11,g3,g3);
+screen.drawRect(171,11,g3,g3);
+screen.drawRect(176,11,g3,g3);
+screen.drawRect(181,11,g3,g3);
+screen.drawRect(186,11,g3,g3);
+screen.drawRect(191,11,g3,g3);
+screen.drawRect(196,11,g3,g3);
+screen.drawRect(201,11,g3,g3);
+screen.drawRect(206,11,g3,g3);
+screen.drawRect(211,11,g3,g3);
+screen.drawRect(216,11,g3,g3);
+screen.drawRect(221,11,g3,g3);
+screen.drawRect(226,11,g3,g3);
+screen.drawRect(231,11,g3,g3);
+screen.drawRect(231,11,g3,g3);
+screen.drawRect(236,11,g3,g3);
+screen.drawRect(241,11,g3,g3);
+screen.drawRect(246,11,g3,g3);
+screen.drawRect(251,11,g3,g3);
+screen.drawRect(256,11,g3,g3);
+screen.drawRect(261,11,g3,g3);
+screen.drawRect(266,11,g3,g3);
+screen.drawRect(271,11,g3,g3);
+screen.drawRect(276,11,g3,g3);
+screen.drawRect(281,11,g3,g3);
+screen.drawRect(286,11,g3,g3);
+screen.drawRect(291,11,g3,g3);
+screen.drawRect(296,11,g3,g3);
+screen.drawRect(301,11,g3,g3);
+screen.drawRect(306,11,g3,g3);
+screen.drawRect(311,11,g3,g3);
+screen.drawRect(316,11,g3,g3);
+screen.drawRect(321,11,g3,g3);
+screen.drawRect(326,11,g3,g3);
+screen.drawRect(331,11,g3,g3);
+screen.drawRect(336,11,g3,g3);
+
+}
